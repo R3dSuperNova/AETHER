@@ -1,0 +1,18 @@
+# config.yaml – Project AETHER
+
+project_name: AETHER
+description: AI-enhanced test system for military radio and operator support
+version: 0.1.0
+authors:
+  - Storm Styles
+  - Dr. SuperNova
+  - Adam (QTAP theory)
+license: MIT
+environment:
+  python_version: "3.10"
+  dependencies:
+    - numpy
+    - pandas
+    - flask
+    - openai
+    - scikit-learn

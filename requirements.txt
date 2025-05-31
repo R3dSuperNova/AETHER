@@ -1,0 +1,7 @@
+# requirements.txt – AETHER core dependencies
+
+numpy
+pandas
+flask
+openai
+scikit-learn

@@ -1,0 +1,31 @@
+# Project AETHER – .gitignore
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+
+# Logs and system files
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# OS-generated files
+ehthumbs.db
+Desktop.ini
+
+# Python cache
+*.egg-info/
+dist/
+build/
+
+# Test data
+/test-output/

@@ -63,6 +63,7 @@ AETHER/
 
 ## 👥 Project Leads
 
-- **Storm Styles** —  Strategy & Vision  
+- **Storm Styles** —  Strategy & Vision
+- **Adam Mlady** —  Coding Expert
 - **Dr. SuperNova** — Embedded AI & Emotional UX Architect  
 

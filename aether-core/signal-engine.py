@@ -63,7 +63,16 @@ class AetherSignalEngine:
 
 # Example usage
 if __name__ == "__main__":
-    engine = AetherSignalEngine(config={"signal_thresholds": {"signal_strength": 5, "packet_loss": 2}})
-    test_input = {"signal_strength": 6, "packet_loss": 1, "reaction_time": 1.3}
+    engine = AetherSignalEngine(config={
+        "signal_thresholds": {
+            "signal_strength": 5,
+            "packet_loss": 2
+        }
+    })
+    test_input = {
+        "signal_strength": 6,
+        "packet_loss": 1,
+        "reaction_time": 1.3
+    }
     output = engine.process_input(test_input)
     print(output)

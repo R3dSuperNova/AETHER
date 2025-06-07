@@ -34,36 +34,37 @@
 ---
 
 ## 📁 Repository Structure
-AETHER/
-├── aether-core/ # Main logic engine: signal + emotion modules
-│ └── architecture.md # System design overview
-├── Docs/ # Technical writeups, compliance notes
-├── Meta/ # Planning files, milestones, tags
-├── Presentation/ # Pitch outline and visuals
-├── ui-sketches/ # UI concepts for field operator displays
-├── config.yaml # System settings and runtime behaviors
-├── requirements.txt # Dependency list
-└── README.md # You are here
+
+AETHER/  
+├── aether-core/            # Main logic engine: signal + emotion modules  
+│   └── architecture.md     # System design overview  
+├── Docs/                   # Technical writeups, compliance notes  
+├── Meta/                   # Planning files, milestones, tags  
+├── Presentation/           # Pitch outline and visuals  
+├── ui-sketches/            # UI concepts for field operator displays  
+├── config.yaml             # System settings and runtime behaviors  
+├── requirements.txt        # Dependency list  
+└── README.md               # You are here  
 
 ---
 
 ## 📅 Project Timeline (May–June 2025)
 
-| Milestone                     | Status     | ETA          |
-|------------------------------|------------|--------------|
-| Repo & architecture setup    | ✅ Complete | May 31, 2025 |
-| Signal engine draft          | ✅ Complete | June 1, 2025 |
-| UI sketch integration        | ⏳ In Progress | June 5, 2025 |
-| Emotional module validation  | 🟡 Planned | June 10, 2025 |
-| Use case storyboard          | 🟡 Planned | June 15, 2025 |
-| Pitch deck & executive summary | 🔜 Soon | June 20, 2025 |
-| Final Bolt submission        | 🏁 Target | June 30, 2025 |
+| Milestone                          | Status         | ETA            |
+|-----------------------------------|----------------|----------------|
+| Repo & architecture setup         | ✅ Complete     | May 31, 2025   |
+| Signal engine draft               | ✅ Complete     | June 1, 2025   |
+| UI sketch integration             | ✅ Complete     | June 7, 2025   |
+| Emotional module validation       | 🛠️ In Progress  | June 10, 2025  |
+| Use case storyboard               | ⏳ Planned      | June 15, 2025  |
+| Pitch deck & executive summary    | ⏳ Planned      | June 20, 2025  |
+| Final Bolt submission             | 🎯 Target       | June 30, 2025  |
 
 ---
 
 ## 👥 Project Leads
 
-- **Storm Styles** —  Strategy & Vision
-- **Adam Mlady** —  Coding Expert
+- **Storm Styles** — Strategy & Vision  
+- **Adam Mlady** — Coding Expert  
 - **Dr. SuperNova** — Embedded AI & Emotional UX Architect  
 

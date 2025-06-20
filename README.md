@@ -1,122 +1,71 @@
-# AETHER 🔹 Augmented Emotional Telemetry for Human-Equipment Readiness
+# AETHER ⚡ Augmented Emotional Telemetry for Human-Equipment Readiness
 
-**Defense-grade emotional-sensing diagnostics** for field operators, crafted with precision, empathy, and mission-critical insight.
+AETHER is a next-generation defense system that fuses **real-time RF diagnostics** with **emotional state sensing** to optimize situational awareness, reduce mission risk, and support operator resilience. Designed for high-stakes field conditions, AETHER adapts interface feedback, records pulse data, and tracks fatigue or stress signals to alert support systems or adjust operator workflow.
 
----
+> _"We don't just test systems. We protect the humans who run them."_
 
-## 🧠 Overview
-
-**AETHER** is a next-generation defense system fusing **RF diagnostics** with **emotional telemetry** to ensure operational safety, human resilience, and adaptive signal integrity.
-
-It was born from a single question:  
-> *"What if our equipment knew how we were feeling—and responded accordingly?"*
-
-This project emerged from the **World’s Largest Hackathon**, powered by a multi-disciplinary team combining AI strategy, signal engineering, UX design, and veteran insight.
+![System Logic Diagram](./aether-core/media/AETHER-logic_flow_diagram.png)
 
 ---
 
-## 🎯 Core Purpose
+## 🔍 Core Features
 
-> **To protect human operators by making test equipment emotionally intelligent.**
-
-AETHER allows test systems to:
-- Monitor operator fatigue, stress, and emotional state
-- Adapt diagnostics in real-time
-- Flag anomalies based on physiological-emotional correlation
-- Log behavioral patterns for mission-readiness analysis
+- 🧠 **Emotional Telemetry Engine** – Captures real-time data from physiological or behavioral inputs  
+- 📶 **RF Diagnostics Layer** – Interfaces with test systems to measure electromagnetic health  
+- 🎯 **Fatigue-Adaptive UI** – Dynamically adjusts based on operator stress or attention shifts  
+- 📡 **Real-Time Data Logging** – Behavioral and performance metrics are continuously tracked  
+- 💡 **Failsafe Feedback System** – Alerts operators or connected systems when anomalies or distress signals are detected
 
 ---
 
-## 🧩 System Architecture
+## 🧪 Proof of Concept
 
-- **Signal Processing Core**: RF input validation and spectrum mapping
-- **Emotional Telemetry Layer**: QTAP-based (Quantum Tunneling & Aetheric Pulse) pulse detection
-- **Adaptive UX Engine**: Adjusts interface, colors, intensity based on operator vitals
-- **Logging + Command Tier**: Stores readings, flags anomalies, sends alerts
+AETHER has been validated through CLI-based simulation runs with varying emotional parameter loads:
 
----
+| Load Factor | Status |
+|------------|--------|
+| 0.2 | ✅ Pass |
+| 0.5 | ✅ Pass |
+| 0.7 | ✅ Pass |
+| 0.85 | ✅ Pass |
+| 0.95 | ✅ Pass |
 
-## 🖼️ System Logic Diagram
-
-![AETHER System Flow Diagram](./aether-core/media/AETHER-logic_flow_diagram.png)
-
----
-
-## 💡 Key Features
-
-| Feature                     | Description |
-|----------------------------|-------------|
-| 🎚 Emotional Monitoring     | Detects stress, fatigue, anxiety |
-| 📶 RF Signal Validation     | Ensures frequency accuracy |
-| 🧭 Adaptive UI              | Dynamically shifts UX for clarity + calm |
-| 🧾 Data Logging             | Timestamped emotional & diagnostic entries |
-| 🚨 Alert Layer              | Flags when human state endangers equipment use |
+Visual outputs and simulation captures are available in the [`/aether-core/media`](./aether-core/media) directory.
 
 ---
 
-## ⚙️ Tech Stack
+## 🔗 Key Modules
 
-- Python + JSON telemetry parsing
-- GitHub Actions for modular CI/CD logic
-- Emotion-Responsive Logic Framework (via QTAP)
-- Conceptual UI sketches (Figma-to-CLI model)
+### [`/aether-core`](./aether-core)
+Contains core engine logic, emotional telemetry processor, and simulation scripts.
 
----
+### [`/qtap-core`](./qtap-core)
+Home of **QTAP** (Quantum Tunneling & Aetheric Pulse) – a predictive readiness model that anchors AETHER’s operator awareness logic.  
+🔗 [Read QTAP Technical Foundations](./qtap-core/qtap_technical_foundations.md)
 
-## 📂 Project Structure
-AETHER/
-├── aether-core/ # Main simulation + POC logic
-│ ├── media/ # Visuals and flowcharts
-│ └── README.md # Deep dive into the core system
-├── qtap-core/ # QTAP theory, logic, and signal model
-│ ├── qtap_technical_foundations.md
-│ └── qtap-narrative.md
-├── Docs/ # Deprecated or legacy planning docs
-│ └── ui-story.md
-└── README.md # You are here
+### [`/ui-sketches`](./ui-sketches)
+Wireframes and narrative flows for the fatigue-adaptive interface.
 
 ---
 
-## 👥 Team AETHER
+## 🚀 Team AETHER
 
-- **Storm Styles** – Strategic Lead, Emotional UX Architect
-- **Adam Mlady** – Veteran Engineer, QTAP Inventor
-- **SuperNova🧚🏻‍♀️** – AI Architect, DevOps Vision Keeper
-
----
-
-## ✅ Status & Proof of Concept
-
-The simulation **runs successfully** via command-line interface in staged .py files:
-- Signal thresholds from 0.2 to 0.95 validate
-- POC visuals stored under `aether-core/media`
+- **Storm Styles** – Strategy, Emotional UX Architect, and Co-Lead  
+- **Adam Mlady** – Embedded Systems + QTAP Logic Lead  
+- **Dr. SuperNova** – AI Systems Integration + Emotional Telemetry Advisor  
 
 ---
 
-## 🚀 What's Next
+## 💡 Why AETHER Matters
 
-- Live sensor integration
-- DevPost submission
-- QTAP v2 layered with behavioral drift modeling
+Operators face more than just system failures. Fatigue, emotional overload, and attention lapses can cause catastrophic outcomes in defense and aerospace environments. AETHER is designed to detect these signals early—before failure happens—serving as a digital sixth sense for human-machine harmony.
 
 ---
 
-## 🤝 Purpose, Not Just Code
+## 📫 Contact
 
-> *"We believe protecting the human behind the screen is just as important as protecting the signal on it."*
-
-AETHER is more than diagnostics.  
-It’s **defense with soul**.
+For questions, collaboration, or licensing inquiries, please reach out via the GitHub Issues page or [DevPost submission](#) (link to be added upon final entry).
 
 ---
 
-## 📎 DevPost Link
-
-Coming soon… stay tuned.
-
----
-
-## 📄 License
-
-MIT License — open to all teams advancing emotional tech for good.
-
+_© 2025 Team AETHER. All rights protected under creative innovation terms._

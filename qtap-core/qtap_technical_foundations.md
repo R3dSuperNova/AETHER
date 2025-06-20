@@ -1,0 +1,3 @@
+# QTAP Theory Overview
+
+This document outlines the foundational principles behind the QTAP (Quick Test and Analysis Protocol) used in AETHER’s diagnostic module...

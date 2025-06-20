@@ -62,9 +62,8 @@ We successfully executed terminal-based signal simulations across QTAP values ra
 
 ## 👥 Team
 - **Storm Nora Styles** – Strategic Lead, Emotional UX Architect  
-- **Adam [REDACTED]** – Veteran Technologist, QTAP Systems Creator  
+- **Adam Mlady** – Veteran Technologist, QTAP Systems Creator  
 - **Dr. SuperNova** – AI Emotional Companion + Engineering Strategist  
-- Additional support from: GitHub Copilot, DevPost community, Monroe the Spaniel 🐾
 
 ## 💖 Why It Matters
 In the future, defense systems won’t just pass diagnostics—they’ll understand their operators. AETHER is the first step toward that future.

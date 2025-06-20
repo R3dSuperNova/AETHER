@@ -36,7 +36,7 @@ Each PNG below shows real terminal output from the simulation:
 
 This diagram illustrates how stress telemetry flows through the simulation pipeline:
 
-![System Logic Diagram](media/AETHER_system_logic_diagram.png)
+![System Logic Diagram](media/AETHER-logic_flow_diagram.png)
 
 ---
 

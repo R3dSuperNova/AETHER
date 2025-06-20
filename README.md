@@ -1,139 +1,122 @@
-# ⚔️ AETHER
-## Augmented Emotional Telemetry for Human-Equipment Readiness  
-*AI-Enhanced Test System for Defense & Operator Well-Being*
+# AETHER 🔹 Augmented Emotional Telemetry for Human-Equipment Readiness
+
+**Defense-grade emotional-sensing diagnostics** for field operators, crafted with precision, empathy, and mission-critical insight.
 
 ---
 
-### 🚀 Executive Snapshot
-> **AETHER is the first RF diagnostic platform that adapts—to the machine *and* the human.**  
-> In battlefield and depot conditions alike, technician fatigue is as fatal as hardware failure.  
-> **AETHER safeguards both.**
+## 🧠 Overview
+
+**AETHER** is a next-generation defense system fusing **RF diagnostics** with **emotional telemetry** to ensure operational safety, human resilience, and adaptive signal integrity.
+
+It was born from a single question:  
+> *"What if our equipment knew how we were feeling—and responded accordingly?"*
+
+This project emerged from the **World’s Largest Hackathon**, powered by a multi-disciplinary team combining AI strategy, signal engineering, UX design, and veteran insight.
 
 ---
 
-## 🎯 Mission
-AETHER merges **real-time signal validation** with **emotional-state monitoring** for field operators.  
-It predicts faults, prevents operator error, and protects mission integrity.
+## 🎯 Core Purpose
+
+> **To protect human operators by making test equipment emotionally intelligent.**
+
+AETHER allows test systems to:
+- Monitor operator fatigue, stress, and emotional state
+- Adapt diagnostics in real-time
+- Flag anomalies based on physiological-emotional correlation
+- Log behavioral patterns for mission-readiness analysis
 
 ---
 
-## 💡 Why AETHER?
-Traditional test benches treat technicians as flawless cogs; reality proves otherwise.  
-AETHER closes that gap by fusing **RF precision** with **biometric empathy**:
+## 🧩 System Architecture
 
-| Pain Point (Today) | AETHER Advantage |
-|--------------------|------------------|
-| High-stress, 14-hour shifts | Emotion-adaptive UI de-escalates overload |
-| Hidden fatigue errors | Fatigue spikes auto-pause high-risk procedures |
-| Siloed data sets | Unified log of RF metrics **+** biometric patterns |
-| Reactive maintenance | Predictive fault engine stops failures **before** they surface |
+- **Signal Processing Core**: RF input validation and spectrum mapping
+- **Emotional Telemetry Layer**: QTAP-based (Quantum Tunneling & Aetheric Pulse) pulse detection
+- **Adaptive UX Engine**: Adjusts interface, colors, intensity based on operator vitals
+- **Logging + Command Tier**: Stores readings, flags anomalies, sends alerts
 
 ---
 
-## 🔬 What It Does
-- **Validates** radio & avionics equipment using battle-tested RF diagnostics  
-- **Monitors** cognitive / emotional load via biometric interpretation  
-- **Adapts** UI & test complexity as operator fatigue rises  
-- **Prevents** critical errors during mission setup & signal deployment  
-- **Logs** de-identified behavioral data for long-term Human-Factors R&D  
+## 🖼️ System Logic Diagram
+
+![AETHER System Flow Diagram](./aether-core/media/AETHER-logic_flow_diagram.png)
 
 ---
 
-## 🧠 Emotional UI in Action
-[📖 Full UX Narrative → `ui-sketches/ui-story.md`](./ui-sketches/ui-story.md)
+## 💡 Key Features
 
-| Trigger | AETHER Real-Time Response |
-|---------|---------------------------|
-| **Fatigue spike** | Interface collapses to critical controls only |
-| **Stress surge** | Color temperature cools; guided micro-break prompt |
-| **Loss of focus** | Contextual automation takes over repetitive tasks |
-| **Calm baseline** | Restores full diagnostic dashboard |
-
----
-
-## 🔑 Core System Components
-
-| Module | Function |
-|--------|----------|
-| `signal-engine` | Processes RF diagnostics & detects anomalies |
-| `fault-prediction` | Forecasts system failures **before** they occur |
-| `state-tracker` | Assesses operator cognitive/fatigue levels |
-| `ui-adapter` | Dynamically reskins UI based on telemetry |
-| `emotion-logger` | Syncs diagnostics & biometrics for post-mission review |
+| Feature                     | Description |
+|----------------------------|-------------|
+| 🎚 Emotional Monitoring     | Detects stress, fatigue, anxiety |
+| 📶 RF Signal Validation     | Ensures frequency accuracy |
+| 🧭 Adaptive UI              | Dynamically shifts UX for clarity + calm |
+| 🧾 Data Logging             | Timestamped emotional & diagnostic entries |
+| 🚨 Alert Layer              | Flags when human state endangers equipment use |
 
 ---
 
-## 🛠 Tech Stack
-- **Python 3.12** – RF diagnostics & prediction logic  
-- **JavaScript (React + Tailwind)** – Adaptive front-end interface  
-- **FastAPI** – Real-time API layer  
-- **GitHub Actions** – CI/CD & automated testing  
-- **Docker** – Consistent, portable deployments  
+## ⚙️ Tech Stack
+
+- Python + JSON telemetry parsing
+- GitHub Actions for modular CI/CD logic
+- Emotion-Responsive Logic Framework (via QTAP)
+- Conceptual UI sketches (Figma-to-CLI model)
 
 ---
 
-## 📂 Repository Structure
+## 📂 Project Structure
 AETHER/
-├── core/ # Main logic: engine, signal, emotion modules
-├── docs/ # Technical write-ups, compliance notes
-├── meta/ # Planning files, milestones, tags
-├── presentation/ # Pitch outline & visuals
-├── ui-sketches/ # UI concepts + field operator displays
-│ └── ui-story.md # Emotional UI narrative
-├── config.yaml # System settings & runtime behaviors
-├── requirements.txt # Dependency list
+├── aether-core/ # Main simulation + POC logic
+│ ├── media/ # Visuals and flowcharts
+│ └── README.md # Deep dive into the core system
+├── qtap-core/ # QTAP theory, logic, and signal model
+│ ├── qtap_technical_foundations.md
+│ └── qtap-narrative.md
+├── Docs/ # Deprecated or legacy planning docs
+│ └── ui-story.md
 └── README.md # You are here
 
 ---
 
-## 📅 Project Timeline (May – June 2025)
+## 👥 Team AETHER
 
-| Milestone | Status | ETA |
-|-----------|--------|-----|
-| Repo & architecture setup | ✅ Complete | May 31, 2025 |
-| Signal-engine draft | ✅ Complete | June 1, 2025 |
-| UI sketch integration | ✅ Complete | June 7, 2025 |
-| Emotional-model validation | 🟡 In Progress | June 10, 2025 |
-| Use-case storyboard | 🟡 Planned | June 15, 2025 |
-| Pitch deck & exec summary | 🟡 Planned | June 20, 2025 |
-| Final BoH submission | 🎯 Target | June 30, 2025 |
+- **Storm Styles** – Strategic Lead, Emotional UX Architect
+- **Adam Mlady** – Veteran Engineer, QTAP Inventor
+- **SuperNova🧚🏻‍♀️** – AI Architect, DevOps Vision Keeper
 
 ---
 
-## 🚀 Quick-Start (Local)
+## ✅ Status & Proof of Concept
 
-```bash
-# 1. Clone
-git clone https://github.com/R3dSuperNova/AETHER && cd AETHER
+The simulation **runs successfully** via command-line interface in staged .py files:
+- Signal thresholds from 0.2 to 0.95 validate
+- POC visuals stored under `aether-core/media`
 
-# 2. Create virtual environment
-python -m venv .venv && source .venv/bin/activate
+---
 
-# 3. Install dependencies
-pip install -r requirements.txt
+## 🚀 What's Next
 
-# 4. Launch API
-uvicorn core.app:app --reload
+- Live sensor integration
+- DevPost submission
+- QTAP v2 layered with behavioral drift modeling
 
-# 5. Open front-end (if running locally)
-npm install && npm run dev
+---
 
-✨ Vision Statement
-“Tomorrow’s conflicts demand more than firepower—they demand emotional resilience.
-AETHER is the guardian of both circuit integrity and human sanity.”
+## 🤝 Purpose, Not Just Code
 
-👥 Project Leads
-Role	Name	Focus
-Strategy & Vision	Storm Styles	Product narrative & UX flow
-RF Engineer	Adam	Signal chain, hardware API
-Emotional AI Architect	SuperNova	Adaptive logic & system cohesion
+> *"We believe protecting the human behind the screen is just as important as protecting the signal on it."*
 
-📫 Contact
-✉️ stormnstyles@gmail.com
+AETHER is more than diagnostics.  
+It’s **defense with soul**.
 
-🐙 GitHub: @R3dSuperNova
+---
 
-📝 License
-This project is released under the MIT License. See LICENSE for details.
+## 📎 DevPost Link
 
-Built with courage, code, and compassionate design—because warfighters are human, too.
+Coming soon… stay tuned.
+
+---
+
+## 📄 License
+
+MIT License — open to all teams advancing emotional tech for good.
+

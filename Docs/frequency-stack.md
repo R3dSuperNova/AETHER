@@ -37,8 +37,7 @@ By aligning ARTE’s native **System Layer** logs with higher-order frequency la
 
 ## 4 · Signal Flow Diagram
 
-> ![Frequency Stack Diagram](../media/frequency_stack_diagram.png)  
-> *This layered diagram illustrates how data ascends from raw system logs to human-state interpretation. (PNG placeholder—see “Next Steps” to generate.)*
+![Frequency Stack Diagram](../aether-core/media/frequency_stack_diagram.png)
 
 ---
 

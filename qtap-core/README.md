@@ -1,67 +1,88 @@
-# QTAP: **Quantum-Tuned Adaptive Protocol**  
-*A Real-Time Physiological and Emotional Monitoring Engine for High-Stakes Human Environments*
+# QTAP: Quantum-Tuned Adaptive Protocol  
+*A Real-Time Emotional & Physiological Monitoring Engine*
 
 ---
 
 ## 🔍 What is QTAP?
 
-QTAP is the beating heart of **Project AETHER’s emotional intelligence engine**—a lightweight yet powerful adaptive protocol that interprets physiological and behavioral data in real time to detect stress, fatigue, and cognitive decline in mission-critical personnel.
+QTAP (Quantum-Tuned Adaptive Protocol) is the emotional intelligence core of **Project AETHER**—a lightweight yet powerful adaptive protocol that monitors the **real-time physiological and cognitive states** of frontline personnel.
 
-This module doesn’t just monitor.  
-It **understands**, **adapts**, and **responds.**
-
----
-
-## 💡 Why QTAP Matters
-
-In combat zones, field testing environments, or high-pressure simulations, mental state is mission-critical.  
-Yet most systems **ignore the operator**. QTAP flips the script.
-
-Built with and for veterans, QTAP was born from firsthand understanding of how subtle emotional and neurological shifts can escalate into catastrophic outcomes if left untracked.
-
-We don’t just track anomalies—we give the system emotional *eyes*.
+QTAP doesn’t just measure.  
+It **understands**, **adapts**, and **responds** to emotional thresholds—helping save lives where milliseconds matter.
 
 ---
 
-## 🧠 Core Features
+## 💡 Why QTAP Exists
 
-| Feature | Description |
-|--------|-------------|
-| 🧬 **Multimodal Input Parsing** | Ingests RF signals, heart rate variability (HRV), galvanic skin response (GSR), and facial micro-expressions (future integration). |
-| ⌛ **Temporal Drift Monitoring** | Detects fatigue and stress buildup over time to anticipate performance degradation. |
-| ⚠️ **Threshold-Triggered Alerts** | Emits adaptive system-level feedback when emotional/physiological markers hit critical points. |
-| 🔁 **Loop-Integrated Protocol** | Feeds real-time data back into the AETHER system for UI/UIX adjustment, mission pause triggers, or operator support activation. |
+In defense testing, combat simulations, or high-pressure operational fields, **emotional resilience is mission-critical**.  
+Yet legacy systems ignore the human behind the hardware.
 
----
-
-## 🛠 Architecture Snapshot
-
-**System Role:**  
-QTAP runs as a modular component within `aether-core`, interoperating with real-time simulation data and external biometric input feeds.
-
-**Languages:**  
-Python (v3.13.x+), JSON configs, modular integration via Flask and potential QT layer (WIP).
+QTAP was designed by and for veterans—embedding real empathy into real-time data flow.  
+It’s a **guardian protocol**—scanning for invisible signs of cognitive fatigue, emotional decline, or autonomic stress signals that could put a mission—or a life—at risk.
 
 ---
 
-## 🌐 Current Files
+## ⚙️ System Features
 
-- [`qtap-narrative.md`](./qtap-narrative.md): Persuasive user-story framing
-- [`qtap_technical_foundations.md`](../Docs/qtap_technical_foundations.md): Deep-dive into detection thresholds, logic gates, and emotion-state mapping
-- 📂 Placeholder for signal ingestion simulation & real data binders (TBD)
-
----
-
-## 📈 What’s Next
-
-- Integrate QTAP with **AETHER’s RF signal handlers**
-- Begin **live UI test feedback loops**
-- Simulate **biometric drift** using QTAP thresholds
-- Finalize **deployment logic for real-world operator alerts**
+| 🔧 Feature                     | 💬 Description |
+|-------------------------------|----------------|
+| 🧬 **Multimodal Input Parsing** | Ingests RF signal outputs, behavioral tags, and placeholder biometric inputs (HRV, GSR, facial feedback). |
+| ⌛ **Temporal Drift Monitoring** | Tracks time-based changes in operator stress and fatigue. |
+| ⚠️ **Threshold Alert Triggers** | Signals to simulation environment when tolerance thresholds are exceeded. |
+| 🔁 **Real-Time Feedback Loop**  | Outputs adaptive telemetry for UI overlays and simulation pacing adjustments. |
 
 ---
 
-## 🙌 Final Note
+## 🧩 Architecture Snapshot
 
-QTAP is more than a module—it’s a **guardian protocol** for the unseen mental load of frontline personnel.  
-Every threshold detected is a life better protected. Every adaptive signal is a step toward safety.
+**Language:** Python 3.13+  
+**Framework:** Local simulation CLI with planned QT/Flask UI expansion  
+**Module Type:** Plug-in core for `aether-core`, invoked within operator task simulations
+
+📁 *See file: `qtap-core/qtap-narrative.md` for full context framing.*  
+📁 *Technical overview: [`qtap_technical_foundations.md`](../Docs/qtap_technical_foundations.md)*
+
+---
+
+## 🖼️ System Flow Diagram
+
+![QTAP System Logic Diagram](./media/QTAP-logic_flow_diagram.png)
+
+---
+
+## 🧪 Proof of Concept
+
+Simulation test values were executed across multiple drift states:
+
+| Drift Threshold | Outcome |
+|------------------|---------|
+| `drift=0.2`      | ✅ Stable |
+| `drift=0.5`      | ⚠️ Mild warning |
+| `drift=0.7`      | ⚠️ Elevated warning |
+| `drift=0.85`     | 🔴 Critical |
+| `drift=0.95`     | 🛑 Simulation halted |
+
+📷 *Screenshots available in* [`aether-core/media`](../aether-core/media)
+
+---
+
+## 🔜 What's Next
+
+- [ ] Connect QTAP logic directly to AETHER UI alerting layer  
+- [ ] Simulate fatigue drift from real biometric datasets  
+- [ ] Generate mock GSR & HRV inputs from test devices  
+- [ ] Polish adaptive loop timing to respond under 250ms
+
+---
+
+## 🤝 Final Thought
+
+QTAP brings heart to hardware.  
+In an age of automated systems, it is the *first emotional telemetry layer* designed to walk beside the operator—not just observe them.
+
+**Every threshold crossed is a chance to intervene.  
+Every flag triggered is a life protected.**
+
+---
+
+> **Project AETHER: Giving Emotion a Role in Operational Readiness.**

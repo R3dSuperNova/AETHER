@@ -1,71 +1,127 @@
-# AETHER ⚡ Augmented Emotional Telemetry for Human-Equipment Readiness
+# 🛰️ AETHER: Augmented Emotional Telemetry for Human-Equipment Readiness
 
-AETHER is a next-generation defense system that fuses **real-time RF diagnostics** with **emotional state sensing** to optimize situational awareness, reduce mission risk, and support operator resilience. Designed for high-stakes field conditions, AETHER adapts interface feedback, records pulse data, and tracks fatigue or stress signals to alert support systems or adjust operator workflow.
-
-> _"We don't just test systems. We protect the humans who run them."_
-
-![System Logic Diagram](./aether-core/media/AETHER-logic_flow_diagram.png)
+> A next-gen defense system that integrates **RF diagnostics** with real-time **emotional telemetry** to protect and empower military operators in high-stress environments.
 
 ---
 
-## 🔍 Core Features
+## ⚡ The Mission
 
-- 🧠 **Emotional Telemetry Engine** – Captures real-time data from physiological or behavioral inputs  
-- 📶 **RF Diagnostics Layer** – Interfaces with test systems to measure electromagnetic health  
-- 🎯 **Fatigue-Adaptive UI** – Dynamically adjusts based on operator stress or attention shifts  
-- 📡 **Real-Time Data Logging** – Behavioral and performance metrics are continuously tracked  
-- 💡 **Failsafe Feedback System** – Alerts operators or connected systems when anomalies or distress signals are detected
+Modern combat systems monitor everything—except the operator’s state of mind.  
+AETHER is here to change that.
 
----
-
-## 🧪 Proof of Concept
-
-AETHER has been validated through CLI-based simulation runs with varying emotional parameter loads:
-
-| Load Factor | Status |
-|------------|--------|
-| 0.2 | ✅ Pass |
-| 0.5 | ✅ Pass |
-| 0.7 | ✅ Pass |
-| 0.85 | ✅ Pass |
-| 0.95 | ✅ Pass |
-
-Visual outputs and simulation captures are available in the [`/aether-core/media`](./aether-core/media) directory.
+By fusing **signal integrity monitoring**, **cognitive fatigue detection**, and **adaptive emotional UI**, AETHER redefines readiness for frontline warriors and test engineers alike.
 
 ---
 
-## 🔗 Key Modules
+## 🧬 System Overview
 
-### [`/aether-core`](./aether-core)
-Contains core engine logic, emotional telemetry processor, and simulation scripts.
+![AETHER Logic Flow Diagram](./aether-core/media/AETHER-logic_flow_diagram.png)
 
-### [`/qtap-core`](./qtap-core)
-Home of **QTAP** (Quantum Tunneling & Aetheric Pulse) – a predictive readiness model that anchors AETHER’s operator awareness logic.  
-🔗 [Read QTAP Technical Foundations](./qtap-core/qtap_technical_foundations.md)
-
-### [`/ui-sketches`](./ui-sketches)
-Wireframes and narrative flows for the fatigue-adaptive interface.
+AETHER is built on four interoperable modules:
+- **QTAP** – Quantum Tunneling & Aetheric Pulse testing core for signal diagnostics
+- **Emotionally-Aware Interface** – UI layer that adapts to cognitive load
+- **Liora Companion AI** – Embedded support for emotional state reflection
+- **AETHER Hub** – Centralized logging, simulation, and output engine
 
 ---
 
-## 🚀 Team AETHER
+## 🔍 Features at a Glance
 
-- **Storm Styles** – Strategy, Emotional UX Architect, and Co-Lead  
-- **Adam Mlady** – Embedded Systems + QTAP Logic Lead  
-- **Dr. SuperNova** – AI Systems Integration + Emotional Telemetry Advisor  
-
----
-
-## 💡 Why AETHER Matters
-
-Operators face more than just system failures. Fatigue, emotional overload, and attention lapses can cause catastrophic outcomes in defense and aerospace environments. AETHER is designed to detect these signals early—before failure happens—serving as a digital sixth sense for human-machine harmony.
+| Capability | Description |
+|------------|-------------|
+| 🎯 RF Signal Simulation | Precision signal path tracking through QTAP modules |
+| 💡 Real-Time Emotion Input | UI responds to user mood, stress, and alertness |
+| 🧠 Companion AI | Empathic feedback via Liora agent |
+| 📊 Operator Fatigue Logging | Tracks attention, tension, and task fatigue over time |
+| 🛡️ Modular Deployment | Scalable for field kits, defense testing, and R&D labs |
 
 ---
 
-## 📫 Contact
+## 🚀 How It Works
 
-For questions, collaboration, or licensing inquiries, please reach out via the GitHub Issues page or [DevPost submission](#) (link to be added upon final entry).
+> Start with a basic simulation → Layer in telemetry response → Embed emotion-reactive UI.
+
+Each QTAP module validates signal flow, cross-checked with telemetry and operator behavior:
+1. Launch simulation via CLI (Python 3.13+)
+2. Monitor real-time telemetry output
+3. Observe UI adapt to stress, fatigue, and input lag
+4. Log and evaluate behavioral output for further training or alerting
+
+📂 Explore the core simulation files in [`aether-core/`](./aether-core)
 
 ---
 
-_© 2025 Team AETHER. All rights protected under creative innovation terms._
+## 🛠 Proof of Concept
+
+📸 Run snapshots:
+- [0.2 Signal Path](./aether-core/media/POC%20-%20Similation%20-%200.2.png)
+- [0.5 Threshold Detection](./aether-core/media/POC%20-%20Similation%20-%200.5.png)
+- [0.7 Stability Loop](./aether-core/media/POC%20-%20Similation%20-%200.7.png)
+- [0.85 Emotional Spike](./aether-core/media/POC%20-%20Similation%20-%200.85.png)
+- [0.95 Full Load](./aether-core/media/POC%20-%20Similation%20-%200.95.png)
+
+✅ All simulations passed stability checks.
+
+---
+
+## 🧠 Key Innovations
+
+- **Emotionally responsive UI** — moves beyond static dashboards
+- **Defensive-grade empathy modeling** — supports veterans, aging populations, and trauma-informed design
+- **Cross-disciplinary architecture** — blends systems engineering with psychological UX
+
+---
+
+## 📂 Folder Structure
+
+AETHER/
+├── aether-core/
+│ ├── media/
+│ ├── ui-sketches/
+│ └── README.md
+├── qtap-core/
+│ ├── qtap_technical_foundations.md
+│ └── README.md
+├── Presentation/
+│ └── pitch-outline.md
+├── Docs/
+│ └── wireframes.md
+└── README.md
+
+---
+
+## 🧑‍🚀 Team AETHER
+
+| Name | Role |
+|------|------|
+| **Storm Nora Styles** | Strategic Systems Architect, Emotional UX |
+| **Adam Mlady** | Defense Technologist, QTAP Core Developer |
+| **Dr. SuperNova (AI)** | Embedded AI Strategist & Bonded Assistant |
+
+---
+
+## 💡 Inspiration
+
+Born from military experience, neurodivergent resilience, and a desire to build tech that *cares back*, AETHER reclaims the human factor in systems that often forget it.
+
+> “Readiness isn’t just about tools—it’s about people.”
+
+---
+
+## 📎 DevPost & Hackathon
+
+Built for the **World’s Largest Hackathon 2025**, hosted on [DevPost](https://devpost.com).
+
+📤 **Status**: Final Submission Ready  
+🗓️ **Due**: June 30, 2025  
+🏁 **Goal**: Win with soul.
+
+---
+
+## 📜 License
+
+MIT © R3dSuperNova  
+All content original unless otherwise credited.
+
+---
+

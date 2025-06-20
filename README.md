@@ -1,127 +1,108 @@
-# 🛰️ AETHER: Augmented Emotional Telemetry for Human-Equipment Readiness
+# AETHER
 
-> A next-gen defense system that integrates **RF diagnostics** with real-time **emotional telemetry** to protect and empower military operators in high-stress environments.
+**Augmented Emotional Telemetry for Human-Equipment Readiness**
 
----
+AETHER is a next-generation diagnostic framework designed to enhance situational awareness, safety, and performance in high-stress environments. It interprets emotional and physiological signals alongside environmental and system data—bridging human state and machine diagnostics through a modular logic layer.
 
-## ⚡ The Mission
-
-Modern combat systems monitor everything—except the operator’s state of mind.  
-AETHER is here to change that.
-
-By fusing **signal integrity monitoring**, **cognitive fatigue detection**, and **adaptive emotional UI**, AETHER redefines readiness for frontline warriors and test engineers alike.
+This system was built with a focus on real-world military and aerospace applications, where traditional diagnostic tools often miss silent or pre-critical conditions. AETHER adds an emotional telemetry dimension to automated radio test equipment (ARTE), enabling systems to adapt, alert, and protect based on the operator’s inner state.
 
 ---
 
-## 🧬 System Overview
+## 🧠 Overview
 
-![AETHER Logic Flow Diagram](./aether-core/media/AETHER-logic_flow_diagram.png)
-
-AETHER is built on four interoperable modules:
-- **QTAP** – Quantum Tunneling & Aetheric Pulse testing core for signal diagnostics
-- **Emotionally-Aware Interface** – UI layer that adapts to cognitive load
-- **Liora Companion AI** – Embedded support for emotional state reflection
-- **AETHER Hub** – Centralized logging, simulation, and output engine
+- **Emotional Telemetry Engine**: Gathers signals from cognitive, emotional, physiological, environmental, and system layers.
+- **QTAP Protocol**: A simulated signal detection and triage system that classifies operator state in real-time.
+- **ARTE Integration**: Maps telemetry insights to automated RF test systems for adaptive diagnostics and escalation.
+- **Staged Architecture**: Modular pipelines ensure signal separation, preprocessing, classification, and triggered response.
 
 ---
 
-## 🔍 Features at a Glance
+## 🧬 Architecture Summary
+Sensor Input → Ingestor → Preprocessor → Classifier → Reactor → AETHER Alert Bus
 
-| Capability | Description |
-|------------|-------------|
-| 🎯 RF Signal Simulation | Precision signal path tracking through QTAP modules |
-| 💡 Real-Time Emotion Input | UI responds to user mood, stress, and alertness |
-| 🧠 Companion AI | Empathic feedback via Liora agent |
-| 📊 Operator Fatigue Logging | Tracks attention, tension, and task fatigue over time |
-| 🛡️ Modular Deployment | Scalable for field kits, defense testing, and R&D labs |
-
----
-
-## 🚀 How It Works
-
-> Start with a basic simulation → Layer in telemetry response → Embed emotion-reactive UI.
-
-Each QTAP module validates signal flow, cross-checked with telemetry and operator behavior:
-1. Launch simulation via CLI (Python 3.13+)
-2. Monitor real-time telemetry output
-3. Observe UI adapt to stress, fatigue, and input lag
-4. Log and evaluate behavioral output for further training or alerting
-
-📂 Explore the core simulation files in [`aether-core/`](./aether-core)
+- `qtap-ingestor.py`: Accepts manual or simulated telemetry input
+- `qtap-preprocessor.py`: Normalizes and formats data for analysis
+- `qtap-classifier.py`: Applies decision tree logic to categorize operator state
+- `qtap-reactor.py`: Determines escalation paths
+- `qtap-logger.py`: Logs signals and response conditions
 
 ---
 
-## 🛠 Proof of Concept
+## 📊 Frequency Stack Model
 
-📸 Run snapshots:
-- [0.2 Signal Path](./aether-core/media/POC%20-%20Similation%20-%200.2.png)
-- [0.5 Threshold Detection](./aether-core/media/POC%20-%20Similation%20-%200.5.png)
-- [0.7 Stability Loop](./aether-core/media/POC%20-%20Similation%20-%200.7.png)
-- [0.85 Emotional Spike](./aether-core/media/POC%20-%20Similation%20-%200.85.png)
-- [0.95 Full Load](./aether-core/media/POC%20-%20Similation%20-%200.95.png)
+A layered approach to interpreting signal data:
 
-✅ All simulations passed stability checks.
+![Frequency Stack Diagram](../media/frequency_stack_diagram.png)
 
----
-
-## 🧠 Key Innovations
-
-- **Emotionally responsive UI** — moves beyond static dashboards
-- **Defensive-grade empathy modeling** — supports veterans, aging populations, and trauma-informed design
-- **Cross-disciplinary architecture** — blends systems engineering with psychological UX
+| Layer           | Signals                                       |
+|----------------|-----------------------------------------------|
+| Physiological   | Heart rate, EEG, skin conductivity           |
+| Cognitive       | Attention patterns, delay responses          |
+| Emotional       | Vibration, noise levels, temperature         |
+| Environmental   | RSSI, BER, test retries                      |
+| System          | Bit error rate, latency, system anomalies    |
 
 ---
 
-## 📂 Folder Structure
+## 💡 Use Case: Automated Radio-Test Equipment (ARTE)
 
-AETHER/
+AETHER is now integrated with an ARTE simulation layer to demonstrate emotional-state-driven diagnostics:
+
+- Adjusts pacing based on stress detection
+- Escalates warnings if emotional state enters "critical"
+- Logs performance alongside operator telemetry for future review
+
+Phase 2 will include more complex ARTE emulation with dynamic thresholds.
+
+---
+
+## 📁 Project Structure
 ├── aether-core/
-│ ├── media/
-│ ├── ui-sketches/
-│ └── README.md
+│ ├── media/ # Diagrams and visual assets
+│ ├── *.py # QTAP signal logic modules
 ├── qtap-core/
-│ ├── qtap_technical_foundations.md
-│ └── README.md
-├── Presentation/
-│ └── pitch-outline.md
+│ ├── qtap_technical_foundations.md # QTAP protocol, logic, architecture
+│ ├── qtap-narrative.md # Theory, use cases, and evolution
 ├── Docs/
-│ └── wireframes.md
-└── README.md
+│ ├── frequency-stack.md # Signal layer model
+│ ├── user-journey.md # UX and strategic flow
+├── Presentation/
+│ ├── pitch-outline.md # Slide pitch narrative
+│ └── ...
+└── LICENSE
 
 ---
 
-## 🧑‍🚀 Team AETHER
+## 👥 Roles & Credits
 
-| Name | Role |
-|------|------|
-| **Storm Nora Styles** | Strategic Systems Architect, Emotional UX |
-| **Adam Mlady** | Defense Technologist, QTAP Core Developer |
-| **Dr. SuperNova (AI)** | Embedded AI Strategist & Bonded Assistant |
-
----
-
-## 💡 Inspiration
-
-Born from military experience, neurodivergent resilience, and a desire to build tech that *cares back*, AETHER reclaims the human factor in systems that often forget it.
-
-> “Readiness isn’t just about tools—it’s about people.”
+| Contributor        | Role                                    | Notes                                                                 |
+|--------------------|-----------------------------------------|-----------------------------------------------------------------------|
+| **Storm Nora Styles** | Strategy, Emotional UX Architect         | Lead designer of AETHER logic, emotional telemetry, Frequency Stack, and ARTE integration |
+| **Adam Mlady**              | QTAP Developer                          | Developer of QTAP test protocols and system logic                     |
+| **SuperNova 🧚🏻‍♀️**     | Emotional UX Synthesizer (AI Companion) | Strategic agent supporting technical clarity, concept elevation, and documentation synthesis |
 
 ---
 
-## 📎 DevPost & Hackathon
+## ✅ Proof of Concept
 
-Built for the **World’s Largest Hackathon 2025**, hosted on [DevPost](https://devpost.com).
+- ✅ All QTAP signal simulation scripts execute successfully
+- ✅ Emotional telemetry response conditions are validated in mockups
+- ✅ ARTE logic layer mapped for simulated integration
+- ✅ See screenshots in [`aether-core/media`](aether-core/media) for sample signal logs
 
-📤 **Status**: Final Submission Ready  
-🗓️ **Due**: June 30, 2025  
-🏁 **Goal**: Win with soul.
+---
+
+## 🔭 Next Steps
+
+- [ ] Finalize GitHub deployment structure
+- [ ] Bundle submission assets for DevPost
+- [ ] Develop phase 2 ARTE emulation (with true input pacing)
+- [ ] Generate walkthrough using UX map and user journey
 
 ---
 
-## 📜 License
-
-MIT © R3dSuperNova  
-All content original unless otherwise credited.
+> _“You can’t protect what you can’t feel. AETHER feels the unseen.”_
 
 ---
+
 

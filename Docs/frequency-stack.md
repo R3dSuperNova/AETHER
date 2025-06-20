@@ -1,50 +1,90 @@
-# Frequency Stack: Interpreting Signal through Human Context
+# 📡 Frequency Stack  
+_A layered model for interpreting human & environmental signals alongside automated radio-test output_
 
-## 1. Overview
+---
 
-The Frequency Stack is AETHER's conceptual model for understanding signal input beyond raw data. It categorizes real-time telemetry across human and environmental dimensions, enabling deeper interpretation of stress patterns, operator intent, and diagnostic anomalies.
+## 1 · Purpose
 
-## 2. Purpose
+Automated Radio-Test Equipment (ARTE) excels at detecting **technical** anomalies.  
+**AETHER** expands that capability by interpreting **human-state** and **environmental-context** signals in parallel.  
+The **Frequency Stack** is our guide: a five-layer framework that filters raw telemetry into actionable insights.
 
-This model helps AETHER distinguish between:
+---
 
-- **True system faults** vs **operator-induced variance**
-- **High-alert responses** vs **fatigue-based input lag**
-- **Anomalies** vs **expected behavioral conditions**
+## 2 · Why It Matters for ARTE
 
-Understanding this layered input is critical for test reliability, especially in mission-critical military environments.
+| Challenge in Field Testing                 | Frequency Stack Solution                           |
+|-------------------------------------------|----------------------------------------------------|
+| Operator fatigue causes false failures    | Adds Emotional & Cognitive layers to flag stress   |
+| High ambient noise masks RF irregularities| Correlates Environmental layer with System output |
+| UI overload in noisy combat zones         | Adaptive UX responds to Cognitive load cues        |
 
-## 3. Stack Architecture
+By aligning ARTE’s native **System Layer** logs with higher-order frequency layers, AETHER distinguishes **equipment faults** from **operator-induced variance**—preventing unnecessary retests, mission delays, or equipment misuse.
 
-The Frequency Stack is divided into five core layers:
+---
 
-| Layer | Description | Example Signals |
-|-------|-------------|-----------------|
-| 1. **Physiological Layer** | Real-time vitals and neuro-feedback | HRV, cortisol proxies, galvanic skin response |
-| 2. **Cognitive Layer** | Focus level, memory strain, task-switching effort | Eye-tracking, blink rate, voice stress |
-| 3. **Emotional Layer** | Stress, frustration, fatigue, confidence | Sentiment from tone, posture shifts |
-| 4. **Environmental Layer** | Noise, light, temperature, mission chaos | Sensor inputs, ambient decibel levels |
-| 5. **System Layer** | Hardware/software responsiveness | Lag, dropped packets, system interrupts |
+## 3 · The Five Layers
 
-## 4. Visual Diagram
+| # | Layer Name        | Description                                                | Example Data Sources                                       |
+|---|-------------------|------------------------------------------------------------|------------------------------------------------------------|
+| 1 | **Physiological** | Raw biometric input                                        | HRV, GSR, respiration                                      |
+| 2 | **Cognitive**     | Attention, workload, decision latency                      | UI-interaction timing, task-switch rate                    |
+| 3 | **Emotional**     | Stress, frustration, confidence                            | Voice tone, micro-expressions, sentiment analysis          |
+| 4 | **Environmental** | External conditions influencing test reliability           | Ambient noise (dB), light, vibration, temperature          |
+| 5 | **System**        | ARTE hardware/software diagnostics & signal integrity      | RSSI, BER, test retries, packet loss, latency              |
+
+---
+
+## 4 · Signal Flow Diagram
 
 > ![Frequency Stack Diagram](../media/frequency_stack_diagram.png)  
-> *(Insert your final layered diagram here — placeholder until created)*
-
-## 5. Application in AETHER
-
-In field use, the Frequency Stack enables adaptive diagnostics:
-
-- **Example 1:** If a failed test result coincides with operator frustration and rising environmental noise, the system can flag the result for retest before escalation.
-- **Example 2:** A consistent pattern of elevated emotional frequency paired with clean system output may prompt a UI simplification overlay to reduce stress.
-
-## 6. Future Considerations
-
-The Frequency Stack may evolve into a machine-learning model trained on labeled operator behavior patterns, increasing precision over time.
+> *This layered diagram illustrates how data ascends from raw system logs to human-state interpretation. (PNG placeholder—see “Next Steps” to generate.)*
 
 ---
 
-> **Status:** Actively in design. Seeking real-world operator telemetry to calibrate signal interpretations.
+## 5 · ARTE Integration Path
+
+1. **Tap Native Logs** – Ingest JSON or CSV exports from ARTE (System Layer).  
+2. **Timestamp Merge** – Align biometric & environmental sensors by synchronized UTC.  
+3. **Layer Parsing** – Map each datapoint to its Frequency Stack layer.  
+4. **Correlation Engine** – Identify cross-layer anomalies (e.g., System fault + Emotional spike).  
+5. **Decision Bus** – Trigger UI adjustments or retest flags when multi-layer risk detected.
 
 ---
+
+## 6 · Use-Case Examples
+
+- **False Fail Filter**:  
+  *System reports out-of-spec RSSI, but Environmental layer shows 95 dB background noise → retest automatically scheduled instead of immediate fail.*
+
+- **Operator-Safety Pause**:  
+  *System passes all technical checks; Emotional layer flags high stress & Cognitive layer shows decision lag → AETHER dims UI, inserts guided micro-break.*
+
+---
+
+## 7 · Next Steps
+
+1. **Generate final PNG diagram** (`frequency_stack_diagram.png`) for `/media`.  
+2. **Prototype timestamp merger script** to sync ARTE logs with wearable data.  
+3. **Develop correlation rules** in `frequency_stack_engine.py`.  
+4. **Field-validate** with live ARTE hardware + biometric patch kit.
+
+---
+
+## 8 · Status
+
+> **Draft v1.0** – Content finalized, awaiting diagram asset and code scaffolding.
+
+---
+
+## 9 · Contributors
+
+| Name | Role |
+|------|------|
+| Storm Nora Styles | Architect & Emotional UX Lead |
+| Dr. SuperNova 🧚‍♀️ | AI Strategy & Documentation |
+
+---
+
+*“Technology should read the room—especially when the room is a battlefield.”*
 

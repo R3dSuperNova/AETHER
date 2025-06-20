@@ -20,7 +20,7 @@ The file `emotion_logic_sim.py` allows us to simulate stress levels from `'0.0'`
 
 ## 📸 Screenshot Outputs
 
-Each PNG below shows real terminal output from the simulation.
+Each PNG below shows real terminal output from the simulation:
 
 | Screenshot File | Meaning |
 |-----------------|---------|
@@ -34,17 +34,19 @@ Each PNG below shows real terminal output from the simulation.
 
 ## 🧩 System Logic Diagram
 
-The following diagram visualizes how the stress input flows through the system:
+This diagram illustrates how stress telemetry flows through the simulation pipeline:
 
-![System Logic](media/AETHER_system_logic_diagram.png)
+![System Logic Diagram](media/AETHER_system_logic_diagram.png)
 
 ---
 
 ## ✨ Summary
 
-These results demonstrate a **functioning logic layer** within AETHER, where **emotional telemetry input dynamically governs system behavior**. This is a foundational proof of concept toward the larger vision:
+This simulation validates AETHER’s **foundational emotional logic engine**, where **real-time telemetry triggers adaptive operational responses**. The system can dynamically shift behavior based on operator stress input, simulating break logic, simplification, or full operational pause.
 
-> “To safeguard both human and hardware integrity in high-stakes defense-grade RF testing environments through emotionally adaptive systems.”
+This is a critical step toward the larger mission:
+
+> 🔒 *Safeguard both human and hardware integrity in high-stakes RF environments through emotionally intelligent response systems.*
 
 ---
 

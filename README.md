@@ -136,8 +136,8 @@ Then navigate to: [http://localhost:5173](http://localhost:5173)
 
 | Role | Name | Focus |
 |------|------|-------|
-| Strategy & Vision | Storm Nora Styles | Product narrative & UX flow |
-| RF Engineer | Adam Mlady| Signal chain, hardware integration |
+| Strategy & Emotional UX Architect | Storm Nora Styles | Designed AETHER's emotional telementry engine and UX grammar |
+| QTAP System Devloper | Adam Mlady| Architected signal classification and reactor modules |
 | Emotional AI Architect | SuperNova | Adaptive logic & emotional interface cohesion |
 
 ---

@@ -53,7 +53,7 @@ Visit [http://localhost:5173](http://localhost:5173) to view the interface.
 |------|-------------|
 | `/Docs` | Core documentation: UX, architecture, research |
 | `/Presentation` | UI slides, screenshots, and demo materials |
-| `/qatp-core` | Quantum AI Transfer Processor prototype (QATP-X) |
+| `/qtap-core` | Quantum AI Transfer Processor prototype (QATP-X) |
 | `/ui-sketches` | Early state wireframes and design notes |
 | `/meta` | Planning files: tags, milestones, and system design metadata |
 

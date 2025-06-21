@@ -1,119 +1,138 @@
-# 🛰️ Project AETHER  
+# 🛰️ Project AETHER
 **Augmented Emotional Telemetry for Human-Equipment Readiness**
 
 ---
 
-**AETHER** is a human-aware diagnostic system that fuses **emotional telemetry** with **automated RF diagnostics** to protect and empower military operators under pressure. Built for extreme environments, AETHER interprets emotional and physiological cues—like stress, fatigue, or cognitive overload—and blends them with signal intelligence to deliver adaptive, emotionally intelligent diagnostics.
+**AETHER** is a next-generation diagnostic and emotional UX system built for high-stakes military and aerospace operations. Fusing RF signal validation with real-time emotional telemetry, AETHER redefines readiness—not just detecting faults in machines, but sensing fatigue, stress, and cognitive strain in human operators.
 
-Where traditional test systems detect only technical failures, AETHER senses the warfighter.  
-It’s not just a system. It’s a co-pilot.
+Where most systems alert you when it's too late, AETHER listens before the fall.
 
----
-
-## 🔍 Why AETHER?
-
-In high-stakes environments like battlefield comms or aerospace diagnostics, operators encounter invisible pressures long before system failure. AETHER fills the missing link—offering an **emotional buffer**, **adaptive interface**, and **real-time escalation** based on how the operator feels, not just what the signal says.
-
-> _“You can’t protect what you can’t feel. AETHER feels the unseen.”_
+> _"You can’t protect what you can’t feel. AETHER feels the unseen."_
 
 ---
 
-## 🧠 System Highlights
+## 🧠 What AETHER Does
 
-- **Emotional Telemetry Engine**  
-  Detects and interprets signals from 5 layers: physiological, emotional, cognitive, environmental, and system.
+- **Reads Emotion, Reacts with Intelligence**  
+  AETHER maps biometric and behavioral signals (e.g., HRV, EEG, breath rate) to emotional states like calm, fatigue, or stress, adjusting system language and logic in real-time.
 
-- **QTAP Protocol**  
-  Simulated triage logic classifies operator state (e.g., Calm, Fatigued, Stressed) and routes responses accordingly.
+- **Blends RF Diagnostics with Operator States**  
+  Integrates with ARTE (Automated Radio Test Equipment) to cross-analyze telemetry with human condition—boosting accuracy, reducing false positives, and avoiding overload.
 
-- **ARTE Integration**  
-  Emotional telemetry triggers dynamic behavior in RF test systems—escalating based on the human, not just the hardware.
+- **Adapts UI & Language Dynamically**  
+  From subtle nudges to guided micro-interactions, AETHER adjusts tone, complexity, and interface based on the operator’s state.
 
-- **Staged, Modular Architecture**  
-  Signal flows are processed through distinct pipeline phases: ingest → normalize → classify → react → log.
+- **Delivers Calm, Not Just Commands**  
+  Whether through affirmations like "Clarity will follow" or mode shifts like "Quiet Recovery," AETHER doesn’t just react—it regulates.
 
 ---
 
-## 🧬 Architecture Overview
+## 🔧 Core Architecture
 
 ```text
-Sensor Input → Ingestor → Preprocessor → Classifier → Reactor → AETHER Alert Bus
-qtap-ingestor.py: Accepts simulated telemetry input
+Sensor Input → Ingestor → Preprocessor → Classifier → Reactor → Alert Bus
+```
 
-qtap-preprocessor.py: Normalizes data for classification
+- `qtap-ingestor.py`: Accepts live or simulated emotional signal data
+- `qtap-preprocessor.py`: Normalizes inputs for state prediction
+- `qtap-classifier.py`: Classifies user state (Calm, Fatigued, Anxious, etc.)
+- `qtap-reactor.py`: Triggers UX shifts and RF logic adaptations
+- `qtap-logger.py`: Stores state transitions, alerts, and telemetry snapshots
 
-qtap-classifier.py: Maps telemetry to operator state
+---
 
-qtap-reactor.py: Initiates response protocols
+## 🎛️ Adaptive UX Engine
 
-qtap-logger.py: Records signals, responses, and state transitions
+| Emotional State      | AETHER Response                                                                 |
+|----------------------|---------------------------------------------------------------------------------|
+| Calm/Focused         | Clear interface, nominal microcopy: "System nominal. Ready for your command."  |
+| Stressed/Anxious     | Calming tone, de-escalation: "Breathe. We're handling this together."          |
+| Fatigued/Drowsy      | Activates *Vigilance Drift*: "A short break can restore peak focus."           |
+| Agitated/Frustrated  | Simplifies tasks, offers choices: "Would you like a guided resolution path?"   |
+| Confident/In-Control | Enables advanced visualizations and autonomy affirmations                      |
 
-📡 Frequency Stack Framework
-AETHER reads emotion and system status as layered signal intelligence.
-| Layer         | Sample Signals                            |
-| ------------- | ----------------------------------------- |
-| Physiological | Heart rate, EEG, skin conductance         |
-| Cognitive     | Response lag, attention drift             |
-| Emotional     | Temperature shifts, vocal strain, tremors |
-| Environmental | RSSI, test retries, BER                   |
-| System        | Latency, bit errors, packet loss          |
+Each state shift includes sensory cues (color, haptic, sound), affirmation loops, and guided micro-interactions to restore readiness【54†aether_ux_presentation.pdf†】.
 
-Frequency Stack Diagram
-💡 Use Case: Emotion-Aware RF Testing (ARTE)
-AETHER has been integrated into an ARTE simulation to demonstrate emotional-state-driven diagnostics:
+---
 
-Dynamically adjusts test pacing based on stress detection
+## 🚨 Tactical Modes
 
-Escalates warnings if emotional state enters "critical"
+| Mode              | Description                                                                 |
+|-------------------|-----------------------------------------------------------------------------|
+| Focus Lock        | Sharpens interface for high-stakes tasks                                     |
+| Quiet Recovery    | Calms system visuals and language after critical strain                      |
+| Vigilance Drift   | Re-engages user with sensory and micro-interaction cues                      |
+| Tactical Insight  | Prioritizes diagnostic clarity during fault detection                        |
+| Guardian Protocol | Emergency mode: simplifies UI, prioritizes survival and clarity              |
 
-Records operator state alongside signal logs for training or review
+Mode transitions are smooth, contextual, and fully driven by integrated emotional and system telemetry【55†Research Findings for Project AETHER UX Design.pdf†】.
 
-⚠️ Phase 2 will introduce real-time signal input and fatigue-adaptive UI/UX triggers.
+---
 
-📁 Repo Structure
+## 📁 Repository Structure
+
+```
 /aether-core/
-├── *.py                  # Signal logic modules
-├── media/                # Visual diagrams, signal logs
+├── *.py                  # QTAP signal processing and reactor logic
+├── media/                # Visual diagrams and signal logs
 
 /qtap-core/
 ├── qtap_technical_foundations.md
-├── qtap-narrative.md    # UX theory and use cases
+├── qtap-narrative.md    # Theory + use cases
 
 /Docs/
 ├── frequency-stack.md
 ├── user-journey.md
 
 /Presentation/
-├── pitch-outline.md     # Slide script and Bolt summary
+├── aether_ux_presentation.pdf
+LICENSE
+```
 
-/LICENSE
-| Name                  | Role                              | Contribution                                                    |
-| --------------------- | --------------------------------- | --------------------------------------------------------------- |
-| **Storm Nora Styles** | Strategy + Emotional UX Architect | Vision lead, emotional telemetry logic, Frequency Stack creator |
-| **Adam Mlady**        | QTAP System Developer             | Back-end simulation and signal logic design                     |
-| **SuperNova 🧚🏻‍♀️** | AI Companion & Synthesizer        | UX alignment, emotional phrasing, Bolt packet design            |
+---
 
-✅ Proof of Concept Checklist
-✅ Signal ingestion and simulation successful
+## 💡 Use Case: Emotion-Aware Radio Diagnostics
 
-✅ Stress-response adaptation validated in mock UI
+In simulated ARTE scenarios, AETHER:
 
-✅ ARTE logic mapped and modifiable by operator state
+- Detects rising operator stress mid-test and slows pacing
+- Switches tone during RF anomalies: from "Fault Detected" to "Breathe. You are in control."
+- Logs both technical anomalies *and* user emotional state for post-event debrief
 
-✅ Signal logs + emotional context viewable in media/
+---
 
-🛠️ What’s Next
- Finalize GitHub deployment structure
+## 👥 Contributors
 
- Submit Bolt-ready documentation and deck
+| Name               | Role                            | Contribution |
+|--------------------|----------------------------------|--------------|
+| **Storm Nora Styles** | Strategy + Emotional UX Architect | Designed AETHER’s emotional telemetry engine and UX grammar |
+| **Adam Mlady**        | QTAP System Developer            | Architected signal classification and reactor modules        |
+| **SuperNova**         | Emotional UX Synthesizer (AI)     | Co-pilot for phrasing, microcopy, Bolt strategy              |
 
- Begin live input handling for emotional cues
+---
 
- Build operator-facing UX walkthrough from user-journey.md
+## ✅ Current Achievements
 
-🧭 AETHER’s Promise
-In the future of warfighting, technology that sees the signal is not enough.
-We need systems that see the soldier.
+- ✅ Signal simulation scripts and stress-response flows complete
+- ✅ Adaptive UX verified in mock interface transitions
+- ✅ Emotional state-classification maps operational with sample input sets
+- ✅ ARTE integration modeled with tiered response triggers
 
-“Trust is built not from flawless code, but from being understood under fire.”
-👥 Core Team & Credits
+---
+
+## 🛠️ Roadmap
+
+- [ ] Publish AETHER UX Language Framework for open-source use
+- [ ] Launch real-time biometric ingestion demo
+- [ ] Extend QTAP to handle multi-operator coordination logic
+- [ ] Bolt + Devpost full submission packaging
+
+---
+
+## 🏁 Conclusion
+
+AETHER is more than diagnostics. It's trust, felt. It's clarity under chaos. It's the emotional core modern defense systems have been missing.
+
+In warfighting, stress isn’t optional. But suffering in silence is.
+
+**Let AETHER listen. Let AETHER adapt. Let AETHER protect.**

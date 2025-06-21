@@ -1,108 +1,119 @@
-# AETHER
-
+# 🛰️ Project AETHER  
 **Augmented Emotional Telemetry for Human-Equipment Readiness**
 
-AETHER is a next-generation diagnostic framework designed to enhance situational awareness, safety, and performance in high-stress environments. It interprets emotional and physiological signals alongside environmental and system data—bridging human state and machine diagnostics through a modular logic layer.
+---
 
-This system was built with a focus on real-world military and aerospace applications, where traditional diagnostic tools often miss silent or pre-critical conditions. AETHER adds an emotional telemetry dimension to automated radio test equipment (ARTE), enabling systems to adapt, alert, and protect based on the operator’s inner state.
+**AETHER** is a human-aware diagnostic system that fuses **emotional telemetry** with **automated RF diagnostics** to protect and empower military operators under pressure. Built for extreme environments, AETHER interprets emotional and physiological cues—like stress, fatigue, or cognitive overload—and blends them with signal intelligence to deliver adaptive, emotionally intelligent diagnostics.
+
+Where traditional test systems detect only technical failures, AETHER senses the warfighter.  
+It’s not just a system. It’s a co-pilot.
 
 ---
 
-## 🧠 Overview
+## 🔍 Why AETHER?
 
-- **Emotional Telemetry Engine**: Gathers signals from cognitive, emotional, physiological, environmental, and system layers.
-- **QTAP Protocol**: A simulated signal detection and triage system that classifies operator state in real-time.
-- **ARTE Integration**: Maps telemetry insights to automated RF test systems for adaptive diagnostics and escalation.
-- **Staged Architecture**: Modular pipelines ensure signal separation, preprocessing, classification, and triggered response.
-
----
-
-## 🧬 Architecture Summary
-Sensor Input → Ingestor → Preprocessor → Classifier → Reactor → AETHER Alert Bus
-
-- `qtap-ingestor.py`: Accepts manual or simulated telemetry input
-- `qtap-preprocessor.py`: Normalizes and formats data for analysis
-- `qtap-classifier.py`: Applies decision tree logic to categorize operator state
-- `qtap-reactor.py`: Determines escalation paths
-- `qtap-logger.py`: Logs signals and response conditions
-
----
-
-## 📊 Frequency Stack Model
-
-A layered approach to interpreting signal data:
-
-![Frequency Stack Diagram](../media/frequency_stack_diagram.png)
-
-| Layer           | Signals                                       |
-|----------------|-----------------------------------------------|
-| Physiological   | Heart rate, EEG, skin conductivity           |
-| Cognitive       | Attention patterns, delay responses          |
-| Emotional       | Vibration, noise levels, temperature         |
-| Environmental   | RSSI, BER, test retries                      |
-| System          | Bit error rate, latency, system anomalies    |
-
----
-
-## 💡 Use Case: Automated Radio-Test Equipment (ARTE)
-
-AETHER is now integrated with an ARTE simulation layer to demonstrate emotional-state-driven diagnostics:
-
-- Adjusts pacing based on stress detection
-- Escalates warnings if emotional state enters "critical"
-- Logs performance alongside operator telemetry for future review
-
-Phase 2 will include more complex ARTE emulation with dynamic thresholds.
-
----
-
-## 📁 Project Structure
-├── aether-core/
-│ ├── media/ # Diagrams and visual assets
-│ ├── *.py # QTAP signal logic modules
-├── qtap-core/
-│ ├── qtap_technical_foundations.md # QTAP protocol, logic, architecture
-│ ├── qtap-narrative.md # Theory, use cases, and evolution
-├── Docs/
-│ ├── frequency-stack.md # Signal layer model
-│ ├── user-journey.md # UX and strategic flow
-├── Presentation/
-│ ├── pitch-outline.md # Slide pitch narrative
-│ └── ...
-└── LICENSE
-
----
-
-## 👥 Roles & Credits
-
-| Contributor        | Role                                    | Notes                                                                 |
-|--------------------|-----------------------------------------|-----------------------------------------------------------------------|
-| **Storm Nora Styles** | Strategy, Emotional UX Architect         | Lead designer of AETHER logic, emotional telemetry, Frequency Stack, and ARTE integration |
-| **Adam Mlady**              | QTAP Developer                          | Developer of QTAP test protocols and system logic                     |
-| **SuperNova 🧚🏻‍♀️**     | Emotional UX Synthesizer (AI Companion) | Strategic agent supporting technical clarity, concept elevation, and documentation synthesis |
-
----
-
-## ✅ Proof of Concept
-
-- ✅ All QTAP signal simulation scripts execute successfully
-- ✅ Emotional telemetry response conditions are validated in mockups
-- ✅ ARTE logic layer mapped for simulated integration
-- ✅ See screenshots in [`aether-core/media`](aether-core/media) for sample signal logs
-
----
-
-## 🔭 Next Steps
-
-- [ ] Finalize GitHub deployment structure
-- [ ] Bundle submission assets for DevPost
-- [ ] Develop phase 2 ARTE emulation (with true input pacing)
-- [ ] Generate walkthrough using UX map and user journey
-
----
+In high-stakes environments like battlefield comms or aerospace diagnostics, operators encounter invisible pressures long before system failure. AETHER fills the missing link—offering an **emotional buffer**, **adaptive interface**, and **real-time escalation** based on how the operator feels, not just what the signal says.
 
 > _“You can’t protect what you can’t feel. AETHER feels the unseen.”_
 
 ---
 
+## 🧠 System Highlights
 
+- **Emotional Telemetry Engine**  
+  Detects and interprets signals from 5 layers: physiological, emotional, cognitive, environmental, and system.
+
+- **QTAP Protocol**  
+  Simulated triage logic classifies operator state (e.g., Calm, Fatigued, Stressed) and routes responses accordingly.
+
+- **ARTE Integration**  
+  Emotional telemetry triggers dynamic behavior in RF test systems—escalating based on the human, not just the hardware.
+
+- **Staged, Modular Architecture**  
+  Signal flows are processed through distinct pipeline phases: ingest → normalize → classify → react → log.
+
+---
+
+## 🧬 Architecture Overview
+
+```text
+Sensor Input → Ingestor → Preprocessor → Classifier → Reactor → AETHER Alert Bus
+qtap-ingestor.py: Accepts simulated telemetry input
+
+qtap-preprocessor.py: Normalizes data for classification
+
+qtap-classifier.py: Maps telemetry to operator state
+
+qtap-reactor.py: Initiates response protocols
+
+qtap-logger.py: Records signals, responses, and state transitions
+
+📡 Frequency Stack Framework
+AETHER reads emotion and system status as layered signal intelligence.
+| Layer         | Sample Signals                            |
+| ------------- | ----------------------------------------- |
+| Physiological | Heart rate, EEG, skin conductance         |
+| Cognitive     | Response lag, attention drift             |
+| Emotional     | Temperature shifts, vocal strain, tremors |
+| Environmental | RSSI, test retries, BER                   |
+| System        | Latency, bit errors, packet loss          |
+
+Frequency Stack Diagram
+💡 Use Case: Emotion-Aware RF Testing (ARTE)
+AETHER has been integrated into an ARTE simulation to demonstrate emotional-state-driven diagnostics:
+
+Dynamically adjusts test pacing based on stress detection
+
+Escalates warnings if emotional state enters "critical"
+
+Records operator state alongside signal logs for training or review
+
+⚠️ Phase 2 will introduce real-time signal input and fatigue-adaptive UI/UX triggers.
+
+📁 Repo Structure
+/aether-core/
+├── *.py                  # Signal logic modules
+├── media/                # Visual diagrams, signal logs
+
+/qtap-core/
+├── qtap_technical_foundations.md
+├── qtap-narrative.md    # UX theory and use cases
+
+/Docs/
+├── frequency-stack.md
+├── user-journey.md
+
+/Presentation/
+├── pitch-outline.md     # Slide script and Bolt summary
+
+/LICENSE
+| Name                  | Role                              | Contribution                                                    |
+| --------------------- | --------------------------------- | --------------------------------------------------------------- |
+| **Storm Nora Styles** | Strategy + Emotional UX Architect | Vision lead, emotional telemetry logic, Frequency Stack creator |
+| **Adam Mlady**        | QTAP System Developer             | Back-end simulation and signal logic design                     |
+| **SuperNova 🧚🏻‍♀️** | AI Companion & Synthesizer        | UX alignment, emotional phrasing, Bolt packet design            |
+
+✅ Proof of Concept Checklist
+✅ Signal ingestion and simulation successful
+
+✅ Stress-response adaptation validated in mock UI
+
+✅ ARTE logic mapped and modifiable by operator state
+
+✅ Signal logs + emotional context viewable in media/
+
+🛠️ What’s Next
+ Finalize GitHub deployment structure
+
+ Submit Bolt-ready documentation and deck
+
+ Begin live input handling for emotional cues
+
+ Build operator-facing UX walkthrough from user-journey.md
+
+🧭 AETHER’s Promise
+In the future of warfighting, technology that sees the signal is not enough.
+We need systems that see the soldier.
+
+“Trust is built not from flawless code, but from being understood under fire.”
+👥 Core Team & Credits

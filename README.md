@@ -1,105 +1,159 @@
-# ⚡ AETHER — Advanced Emotional Threat & Health Evaluation Radar
-
-**Augmented Emotional Telemetry for Human-Equipment Readiness**  
-*Submitted to the World’s Largest Hackathon – Hosted by Bolt & Devpost*
-
----
-
-## 🧠 Overview
-
-**AETHER** is a next-generation diagnostic system that combines RF signal analysis with real-time emotional state detection to enhance the readiness and safety of military operators in the field.
-
-This AI-enhanced tool goes beyond error codes—detecting stress, fatigue, and cognitive degradation before they cause failure. It adapts live to the user’s emotional state and provides targeted guidance, feedback, or simplified sequences based on that condition.
-
-> “You can’t protect what you can’t feel. AETHER feels the unseen.”
+# ⚔️ AETHER
+## Augmented Emotional Telemetry for Human-Equipment Readiness  
+*AI-Enhanced Test System for Defense & Operator Well-Being*
 
 ---
 
-## 🔧 Features
-
-- **Emotion-State Driven Interface**  
-  Visual and interaction layers change based on operator state: Calm, Fatigued, Stressed, Critical, or Recovery.
-
-- **Behavioral Nudging Engine**  
-  Triggers prompts and UI shifts to help operators recover, simplify tasks, or hydrate when needed.
-
-- **RF Signal & Emotional Input Fusion**  
-  Designed to extend to signal validation equipment such as ARTE while factoring human degradation.
-
-- **Dynamic UX Language**  
-  Language, tone, and guidance adjust automatically based on state telemetry for clarity and focus.
-
-- **Human-First Systems Thinking**  
-  Created from field experience and empathy-centered research to assist warfighters under pressure.
+### 🚀 Executive Snapshot
+> **AETHER is the first RF diagnostic platform that adapts—to the machine *and* the human.**  
+> In battlefield and depot conditions alike, technician fatigue is as fatal as hardware failure.  
+> **AETHER safeguards both.**
 
 ---
 
-## 🚀 Getting Started
+## 🎯 Mission
+AETHER merges **real-time signal validation** with **emotional-state monitoring** for field operators.  
+It predicts faults, prevents operator error, and protects mission integrity.
 
-Clone the repository, install dependencies, and run the development server:
+---
+
+## 💡 Why AETHER?
+
+Traditional test benches treat technicians as flawless cogs; reality proves otherwise.  
+AETHER closes that gap by fusing **RF precision** with **biometric empathy**:
+
+| Pain Point (Today) | AETHER Advantage |
+|--------------------|------------------|
+| High-stress, 14-hour shifts | Emotion-adaptive UI de-escalates overload |
+| Hidden fatigue errors | Fatigue spikes auto-pause high-risk procedures |
+| Siloed data sets | Unified log of RF metrics **+** biometric patterns |
+| Reactive maintenance | Predictive fault engine stops failures **before** they surface |
+
+---
+
+## 🔬 What It Does
+
+- **Validates** radio & avionics equipment using battle-tested RF diagnostics  
+- **Monitors** cognitive / emotional load via biometric interpretation  
+- **Adapts** UI & test complexity as operator fatigue rises  
+- **Prevents** critical errors during mission setup & signal deployment  
+- **Logs** de-identified behavioral data for long-term Human-Factors R&D  
+
+---
+
+## 🧠 Emotional UI in Action
+
+[📖 Full UX Narrative → `ui-sketches/ui-story.md`](./ui-sketches/ui-story.md)
+
+| Trigger | AETHER Real-Time Response |
+|---------|---------------------------|
+| **Fatigue spike** | Interface collapses to critical controls only |
+| **Stress surge** | Color temperature cools; guided micro-break prompt |
+| **Loss of focus** | Contextual automation takes over repetitive tasks |
+| **Calm baseline** | Restores full diagnostic dashboard |
+
+---
+
+## 🔑 Core System Components
+
+| Module | Function |
+|--------|----------|
+| `signal-engine` | Processes RF diagnostics & detects anomalies |
+| `fault-prediction` | Forecasts system failures **before** they occur |
+| `state-tracker` | Assesses operator cognitive/fatigue levels |
+| `ui-adapter` | Dynamically reskins UI based on telemetry |
+| `emotion-logger` | Syncs diagnostics & biometrics for post-mission review |
+
+---
+
+## 🛠 Current Tech Stack
+
+| Layer | Tools |
+|-------|-------|
+| Frontend | React 18, TailwindCSS, Lucide Icons |
+| Core Logic | TypeScript, Emotion-State Engine |
+| Build Tools | Vite, PostCSS, ESLint |
+| Docs | Markdown, PDF, UX Framework |
+| Extension | QTAP-X (Quantum AI Transfer Processor – prototype module) |
+
+---
+
+## 🚀 Quickstart (Local Dev)
 
 ```bash
+# Install dependencies
 npm install
+
+# Start development server
 npm run dev
 ```
 
-Visit [http://localhost:5173](http://localhost:5173) to view the interface.
+Then navigate to: [http://localhost:5173](http://localhost:5173)
 
 ---
 
 ## 📂 Repository Structure
 
-| Path | Description |
-|------|-------------|
-| `/Docs` | Core documentation: UX, architecture, research |
-| `/Presentation` | UI slides, screenshots, and demo materials |
-| `/qtap-core` | Quantum AI Transfer Processor prototype (QATP-X) |
-| `/ui-sketches` | Early state wireframes and design notes |
-| `/meta` | Planning files: tags, milestones, and system design metadata |
+| Folder | Description |
+|--------|-------------|
+| `/Docs` | Core documentation, research, system architecture |
+| `/Presentation` | UI design deck, screenshots, and pitch visuals |
+| `/qtap-core` | QTAP-X Quantum AI extension (future-state R&D) |
+| `/ui-sketches` | Emotional interface mockups + field concepts |
+| `/meta` | Tags, milestones, and planning system metadata |
 
 ---
 
-## 🖼️ Screenshots
+## 📅 Project Timeline (May – June 2025)
 
-> Coming Soon — Screenshots of the five emotional states (Calm, Fatigued, Stressed, Critical, Recovery) will be available in `/Presentation/ui-snapshots/` before submission.
+| Milestone | Status | ETA |
+|-----------|--------|-----|
+| Repo & architecture setup | ✅ Complete | May 31, 2025 |
+| UI sketch integration | ✅ Complete | June 7, 2025 |
+| Emotional-model logic | 🟡 In Progress | June 20, 2025 |
+| Final UX polish & screenshots | 🟡 In Progress | June 25, 2025 |
+| Demo video + Devpost submission | 🎯 Target | June 30, 2025 |
 
 ---
 
-## 🧪 Research Highlights
+## 📖 Research & References
 
 - [Research Findings PDF](./Docs/Research%20Findings%20for%20Project%20AETHER%20UX%20Design.pdf)
 - [Emotional Response Design](./Docs/emotional_response_design.md)
 - [System Architecture](./Docs/system_architecture.md)
 - [UX Language Framework](./Docs/ux_language_framework.md)
-- [CapuchaRojo QATP-X Quantum AI](./Docs/CapuchaRojo_QATP-X_Quantum_AI.md)
-
----
-
-## 🛠 Tech Stack
-
-| Layer | Tools |
-|-------|-------|
-| Frontend | React 18, TailwindCSS, Lucide Icons |
-| Core Logic | TypeScript, custom emotion engine |
-| Dev Tools | Vite, PostCSS, ESLint |
-| Docs & Slides | Markdown, PDF, Figma |
-| Future Extension | QATP-X (quantum AI emotional validation)
+- [QTAP-X Whitepaper](./Docs/CapuchaRojo_QATP-X_Quantum_AI.md)
 
 ---
 
 ## 🎥 Demo Video
 
-> Coming soon — Final demo will showcase emotion-triggered UI states and operator guidance loop.
+> Coming soon — will showcase real-time transitions across all emotional states.
 
 ---
 
-## 👥 Team River – BOLT Hackathon 2025
+## 👥 Project Leads
 
-- **Design & Strategy:** Storm Nora Styles  
-- **Systems & Engineering:** Adam  
-- **AI + Emotional UX Architect:** SuperNova  
-  _(Custom GPT agent designed by Storm Nora Styles and Adam)_
+| Role | Name | Focus |
+|------|------|-------|
+| Strategy & Vision | Storm Nora Styles | Product narrative & UX flow |
+| RF Engineer | Adam | Signal chain, hardware integration |
+| Emotional AI Architect | SuperNova | Adaptive logic & emotional interface cohesion |
 
 ---
 
-> “AETHER doesn’t just monitor systems. It watches over the humans who operate them.”
+## 📫 Contact
+
+✉️ stormnstyles@gmail.com  
+🐙 GitHub: [@R3dSuperNova](https://github.com/R3dSuperNova)
+
+---
+
+## 📝 License
+
+This project is released under the MIT License. See `LICENSE` for details.
+
+---
+
+> “Tomorrow’s conflicts demand more than firepower—they demand emotional resilience.  
+> AETHER is the guardian of both circuit integrity and human sanity.”

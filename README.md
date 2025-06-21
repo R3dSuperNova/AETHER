@@ -137,7 +137,7 @@ Then navigate to: [http://localhost:5173](http://localhost:5173)
 | Role | Name | Focus |
 |------|------|-------|
 | Strategy & Vision | Storm Nora Styles | Product narrative & UX flow |
-| RF Engineer | Adam | Signal chain, hardware integration |
+| RF Engineer | Adam Mlady| Signal chain, hardware integration |
 | Emotional AI Architect | SuperNova | Adaptive logic & emotional interface cohesion |
 
 ---
